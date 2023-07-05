@@ -62,7 +62,7 @@ public class loginActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful())
                             {
-                                Intent intent = new Intent(loginActivity.this,MainActivity.class);
+                                Intent intent = new Intent(loginActivity.this,homepage.class);
                                 startActivity(intent);
                                 finish();
                             }

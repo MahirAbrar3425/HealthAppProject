@@ -121,7 +121,7 @@ public class homepage extends AppCompatActivity {
                             hrate.setError("Required");
                             er=true;
                         }
-                        else if(Integer.parseInt(heartrate)<30)
+                        else if(Integer.parseInt(heartrate)<60)
                         {
                             hrate.setError("Minimum Value is 60");
                             er=true;
@@ -138,9 +138,9 @@ public class homepage extends AppCompatActivity {
                             sys.setError("Required");
                             er=true;
                         }
-                        else if(Integer.parseInt(systole)<60)
+                        else if(Integer.parseInt(systole)<0)
                         {
-                            sys.setError("Minimum Value is 60");
+                            sys.setError("Minimum Value is 0");
                             er=true;
 
                         }
@@ -156,7 +156,7 @@ public class homepage extends AppCompatActivity {
                             dias.setError("Required");
                             er=true;
                         }
-                        else if(Integer.parseInt(diastole)<100)
+                        else if(Integer.parseInt(diastole)<60)
                         {
                             dias.setError("Minimum Value is 100");
                             er=true;
@@ -247,7 +247,7 @@ public class homepage extends AppCompatActivity {
                             textView.setText(diastole);
 
                             TextView txt3 = findViewById(R.id.heartrate);
-                            txt3.setText(hrateint);
+                            txt3.setText(heartrate);
 
 
                             if(dropdown.getSelectedItem().toString().equals("AM"))
@@ -305,7 +305,7 @@ public class homepage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent =new Intent(homepage.this,Statistics.class);
+                Intent intent =new Intent(homepage.this, prevRec.class);
                 startActivity(intent);
                 finish();
 

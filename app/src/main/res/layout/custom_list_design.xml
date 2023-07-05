@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="14dp">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/alertImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="160dp" />
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/alertLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        >
+
+        <TextView
+            android:id="@+id/good"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:textColor="@color/greenlite"
+            android:text="Healthy  "/>
+
+        <TextView
+            android:id="@+id/highsystolic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/good"
+            android:visibility="gone"
+            android:textColor="@color/red"
+            android:text="HighSyst  "
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HighDiast  "
+            android:visibility="gone"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:id="@+id/highdiastolic"
+            android:layout_toEndOf="@+id/highsystolic"
+            />
+        <TextView
+            android:id="@+id/lowsystolic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/highdiastolic"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:text="LowSyst  "
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LowDiast"
+            android:visibility="gone"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/lowdiastolic"
+            android:layout_toEndOf="@+id/lowsystolic"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/heartRateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heart Rate: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ItemHeartRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="80"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bloodPressureLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Pressure: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ItemSystolic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="120"
+            android:textSize="20sp"
+            android:paddingRight="12dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/  "
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/ItemDiastolic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="80"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/commentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comment: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/listComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nothing"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/listll3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listllcomment"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:id="@+id/TxtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TIME"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dateTimeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+
+
+        <TextView
+            android:id="@+id/TxtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATE"
+            android:textSize="20sp"
+            android:layout_marginStart="0dp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/updateDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="70dp"
+
+            android:textColor="@color/greenlite"
+            />
+    <ImageView
+        android:id="@+id/EditButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_edit_24"
+        android:layout_marginLeft="0dp"
+        android:contentDescription="Edit Icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+
+            android:textColor="@color/red"
+            />
+    <ImageView
+        android:id="@+id/DeleteButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_delete_24"
+        android:layout_marginLeft="0dp"
+        android:contentDescription="Delete Icon" />
+
+    </LinearLayout>
+
+</LinearLayout>
