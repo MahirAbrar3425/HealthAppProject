@@ -59,5 +59,3 @@ public class logintest {
         onView(withId(R.id.Login)).perform(click());
     }
 }
-//kubdoiceuoboeuboiy
-//j  ll k mmkmmk 
