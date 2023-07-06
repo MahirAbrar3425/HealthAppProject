@@ -1,6 +1,6 @@
 # HealthAppProject
 
-OBJECTIVES:
+OBJECTIVES:                                            
 ->TO KEEP TRACK OF THE HEALTH ISSUES                                                                         
 ->TO DETECT INCONSISTENCY IN BLOOD PRESSURE
 
