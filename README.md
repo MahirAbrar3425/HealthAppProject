@@ -16,6 +16,15 @@ LOGIN PAGE:
 
 
 REGISTER PAGE:
+
+
+
+
+
+
+
+
+
 ![photo_2023-07-06_08-41-00](https://github.com/MahirAbrar3425/HealthAppProject/assets/113090760/dacc610d-a49b-4dcf-b182-b465a819a6d6)
 
 INITIAL HOME PAGE:
