@@ -108,5 +108,8 @@ public class homepagetesting {
         onView(withId(R.id.comment)).perform(typeText("jhvihubobsd"));
         onView(withId(R.id.Add)).perform(click());
 
+
+
+
     }
 }
