@@ -15,10 +15,12 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:text="USER DATA"
-        android:textColor="@color/white"
+        android:text="My Health Record"
+
+        android:textColor="#552F2F"
         android:textSize="20sp"
         android:textStyle="bold"
+        
 
         />
     <View
@@ -41,7 +43,7 @@
             android:id="@+id/menu_drop"
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
             android:layout_width="170dp"
-
+            android:visibility="gone"
             android:layout_alignParentRight="true"
             android:layout_height="wrap_content"
             android:layout_below="@+id/line"
@@ -51,6 +53,7 @@
             <AutoCompleteTextView
                 android:layout_width="match_parent"
                 android:id="@+id/drop_item"
+                android:visibility="gone"
                 android:layout_height="wrap_content"
                 android:inputType="none"
                 />

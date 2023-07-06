@@ -41,7 +41,9 @@
                     android:textAlignment="center"
 
                     android:textColor="#227e6e"
-                    android:textSize="50sp" />
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    />
 
             </LinearLayout>
 
